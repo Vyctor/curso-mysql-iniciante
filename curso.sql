@@ -112,4 +112,9 @@ select avg(preco) as preco from produtos;
 select sum(preco) as preco from produtos;
 
 # Group
-select uf, count(*) as "Quantidade de clientes" from clientes group by uf;
+select uf, count(*) as Quantidade de clientes from clientes group by uf;
+
+# Join
+insert into pedidos values(1,1,2,100);
+
+select pedidos.id, nome, quantidade, preco as valor unitario, total from pedidos, produtos where pedidos.produto_id = produtos.id;
