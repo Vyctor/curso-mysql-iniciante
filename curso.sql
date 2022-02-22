@@ -55,3 +55,10 @@ alter table pedidos alter column total set default 0;
 
 # Removendo valor padrão
 alter table pedidos alter column total drop default;
+
+# Inserindo registros
+insert into clientes(
+    id, nome, email, cpf
+) values(1, "Vyctor", "dev.vyctor@gmail.com", "123.123.123-12");
+
+insert into clientes(2, "Mario", "mario@mario.com", "111.111.111.11");
