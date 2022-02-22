@@ -79,3 +79,6 @@ select id as "Código", nome as Nome from clientes;
 alter table clientes add column uf char(2);
 update clientes set uf="RJ";
 select DISTINCT uf from clientes;
+
+# Order By
+select * from clientes ORDER BY nome DESC;
