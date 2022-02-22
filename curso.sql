@@ -93,3 +93,13 @@ insert into produtos values(4, 'Produto 4', 450);
 
 select * from produtos where preco > 50 and preco < 200;
 select * from produtos where preco <= 150;
+
+# Like
+insert into produtos values(5, "Dell XPS", 10000);
+insert into produtos values(6, "Macbook Pro M2", 20000);
+insert into produtos values(7, "HP", 4000);
+insert into produtos values(8, "Dell XPS Premium", 12500);
+
+select * from produtos where nome like 'Produto%';
+select * from produtos where nome like 'Mac%';
+select * from produtos where nome like 'Dell%';
