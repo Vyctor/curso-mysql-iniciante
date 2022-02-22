@@ -65,3 +65,12 @@ insert into clientes(2, "Mario", "mario@mario.com", "111.111.111.11");
 
 # Alterando registros
 update clientes set nome="Vyctor Guimaraes" where id=1;
+
+# Buscando registros
+select nome from clientes;
+
+# Alias
+insert into clientes values(3, "José", "jose@jose.com.br", "321.511-513-12");
+insert into clientes values(4, "Maria Silva", "maria@silvax.com.br", "333.555-091-22");
+
+select id as "Código", nome as Nome from clientes;
