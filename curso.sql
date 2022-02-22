@@ -74,3 +74,8 @@ insert into clientes values(3, "José", "jose@jose.com.br", "321.511-513-12");
 insert into clientes values(4, "Maria Silva", "maria@silvax.com.br", "333.555-091-22");
 
 select id as "Código", nome as Nome from clientes;
+
+# Distinct
+alter table clientes add column uf char(2);
+update clientes set uf="RJ";
+select DISTINCT uf from clientes;
