@@ -110,3 +110,6 @@ select max(preco) as preço from produtos;
 select min(preco) as preco from produtos;
 select avg(preco) as preco from produtos;
 select sum(preco) as preco from produtos;
+
+# Group
+select uf, count(*) as "Quantidade de clientes" from clientes group by uf;
