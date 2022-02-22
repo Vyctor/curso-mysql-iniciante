@@ -15,4 +15,8 @@ create table pedidos(
     produto_id int not null,
     quantidade int not null,
     foreign key(produto_id) references produtos(id)
-);
+);# Alterando tabelas
+alter table
+    pedidos
+add
+    column total double;
