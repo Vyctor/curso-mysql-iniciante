@@ -82,3 +82,14 @@ select DISTINCT uf from clientes;
 
 # Order By
 select * from clientes ORDER BY nome DESC;
+
+# Where
+SELECT * FROM clientes WHERE uf <> 'SP' ORDER BY nome DESC;
+
+insert into produtos values(1, 'Produto 1', 100);
+insert into produtos values(2, 'Produto 2', 150);
+insert into produtos values(3, 'Produto 3', 200);
+insert into produtos values(4, 'Produto 4', 450);
+
+select * from produtos where preco > 50 and preco < 200;
+select * from produtos where preco <= 150;
