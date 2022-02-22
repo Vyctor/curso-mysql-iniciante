@@ -128,3 +128,18 @@ BEGIN
 END;
 
 CALL PRIMEIRA();
+
+# Criando procedure de pedido
+alter table produtos add column estoque int;
+update produtos set estoque=10;
+select * from produtos;
+
+DELIMITER &&
+CREATE PROCEDURE faz_pedido(produto_id int, quantidade int, valor double)
+BEGIN    
+	insert into pedidos values(produto_id, quantidade, valor);
+	update produtos set estoque=estoque-quantidade where id = produto_id;
+END &&
+DELIMITER ;
+
+CALL faz_pedido(2,3,300);
