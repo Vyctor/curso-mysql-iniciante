@@ -143,3 +143,7 @@ END &&
 DELIMITER ;
 
 CALL faz_pedido(2,3,300);
+
+# Views
+create view view_clientes_go AS select * from clientes where uf='GO';
+select * from view_clientes_go;
