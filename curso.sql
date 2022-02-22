@@ -118,3 +118,13 @@ select uf, count(*) as Quantidade de clientes from clientes group by uf;
 insert into pedidos values(1,1,2,100);
 
 select pedidos.id, nome, quantidade, preco as valor unitario, total from pedidos, produtos where pedidos.produto_id = produtos.id;
+
+# Criando primeira procedure
+select * from INFORMATION_SCHEMA.ROUTINES;
+
+CREATE PROCEDURE PRIMEIRA()
+BEGIN 
+    SELECT 'Minha primeira rotina';
+END;
+
+CALL PRIMEIRA();
