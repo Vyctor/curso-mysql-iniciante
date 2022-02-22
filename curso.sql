@@ -19,4 +19,16 @@ create table pedidos(
 alter table
     pedidos
 add
-    column total double;
+    column total double;#removendo colunas
+alter table
+    pedidos drop column total;# adicionando constraints (restrições)
+alter table
+    clientes
+add
+    column cpf varchar(20);
+alter table
+    clientes constraint cpf_unico UNIQUE(cpf);#modificando tamanho
+alter table
+    clientes
+modify
+    cpf varchar(14) not null;
