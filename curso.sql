@@ -103,3 +103,10 @@ insert into produtos values(8, "Dell XPS Premium", 12500);
 select * from produtos where nome like 'Produto%';
 select * from produtos where nome like 'Mac%';
 select * from produtos where nome like 'Dell%';
+
+# Funções
+select count(*) from produtos;
+select max(preco) as preço from produtos;
+select min(preco) as preco from produtos;
+select avg(preco) as preco from produtos;
+select sum(preco) as preco from produtos;
