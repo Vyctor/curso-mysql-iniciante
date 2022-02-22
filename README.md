@@ -7,6 +7,7 @@
   - [Relacionando](#relacionando)
     - [CLIENTES](#clientes)
     - [CONTATOS](#contatos)
+  - [Tipos de dados](#tipos-de-dados)
 
 ## O que são bancos de dados?
 
@@ -52,3 +53,38 @@ Oracle se tornase mantenedora do MySQL.
 | ID  | CLIENTE_ID | TELEFONE    |
 | --- | ---------- | ----------- |
 | 1   | 1          | 649999-9999 |
+
+## Tipos de dados
+
+Temos dois tipos interessantes:
+
+- Numéricos
+
+  - TinyInt
+  - Bool
+  - SmallInt
+  - Medium Int
+  - Integer (mais utilizado)
+  - Big Int
+  - Float
+  - Double (precisão)
+  - Decimal
+
+- Data
+
+  - Date
+  - DateTime
+  - Timestamp
+  - Time
+  - Year
+
+- Tipos em cadeia (caractéres)
+
+  - Char
+  - Varchar
+  - Text
+  - LongText
+  - Enum
+
+A otimização dos tipos de dados dos atributos é muito importante, pois ajusta os
+dados para o seu tamanho correto, evitando desperdicio.
